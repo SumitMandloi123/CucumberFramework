@@ -58,7 +58,7 @@ transporter.sendMail(mailOptions, (err, info) => {
     console.error('❌ Error while sending email:', err);
     process.exit(1);
   } else {
-    console.log('✅ Email sent successfully to:', recipientList.join(', '));
+    console.log('✅ Email sent successfully to the :', recipientList.join(', '));
     console.log('📧 Response:', info.response); 
   }
 });

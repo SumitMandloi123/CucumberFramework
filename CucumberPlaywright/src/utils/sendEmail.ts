@@ -55,7 +55,7 @@ const mailOptions = {
 // Send the email
 transporter.sendMail(mailOptions, (err, info) => {
   if (err) {
-    console.error('❌ Error sending email:', err);
+    console.error('❌ Error while sending email:', err);
     process.exit(1);
   } else {
     console.log('✅ Email sent successfully to:', recipientList.join(', '));
